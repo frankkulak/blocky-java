@@ -1,7 +1,7 @@
 package blocky.view;
 
 /**
- * Represents a quality to render the game at it in a visual view (how smooth the transitions are).
+ * Represents the quality (smoothness of transitions) to use when rendering the game.
  */
 public enum GraphicsQuality {
   LOW(4, 16), MED(8, 8), HIGH(16, 4), BEST(32, 2);
@@ -18,5 +18,27 @@ public enum GraphicsQuality {
   GraphicsQuality(int ticksPerStep, int msPerTick) {
     this.ticksPerStep = ticksPerStep;
     this.msPerTick = msPerTick;
+  }
+
+  /**
+   * Parses given String as GraphicsQuality, if possible.
+   *
+   * @param str String from which to parse GraphicsQuality
+   * @return GraphicsQuality parsed from String
+   * @throws IllegalArgumentException if given String could not be parsed as GraphicsQuality
+   */
+  public static GraphicsQuality parseString(String str) throws IllegalArgumentException {
+    switch (str) {
+      case "low":
+        return LOW;
+      case "med":
+        return MED;
+      case "high":
+        return HIGH;
+      case "best":
+        return BEST;
+      default:
+        throw new IllegalArgumentException("Could not parse \"" + str + "\" as GraphicsQuality");
+    }
   }
 }

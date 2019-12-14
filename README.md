@@ -23,11 +23,11 @@ There are multiple ways to run _Blocky_ from your IDE. There is a text-based vie
 > - `solve`: Finds solutions to all levels within a given file.
 > - `gen`: Generates random levels (outputs to console in level data file format).
 >
-> Arguments to follow `run`
+> **Arguments to follow `run`**
 > - `-view <type> <size> <quality>`: Required argument. Specifies the view to be used in rendering the game.
 >   - `<type>`: Required argument. Specifies the view to use for running the game. Must be one of `text` (runs in console), `dark` (runs user-friendly view with dark theme), or `light` (runs user-friendly view with light theme).
 >   - `<size>`: Required for use with `dark` and `light` views only. Specifies the size of the view in pixels. Must be an integer greater than or equal to 50 (e.g. `350`).
->   - `<quality>`: Required for use with `dark` and `light` views only. Specifies the quality (resolution, FPS, etc.) of the view. Must be one of `low`, `med`, `high`, or `best`.
+>   - `<quality>`: Required for use with `dark` and `light` views only. Specifies the quality (i.e. smoothness) of animations. Must be one of `low`, `med`, `high`, or `best`.
 > - `-file <filename>`: Required argument (if and only if `-random` is NOT used). Specifies the file from which to read level data.
 >   - `<filename>`: Required argument. Specifies the name of the file from which to read level data. Must be the name of a file within the levelData directory, including the file extension (e.g. `introLevels.txt`).
 > - `-random <size> <moves>`: Required argument (if and only if `-file` is NOT used). Specifies that levels should be randomly generated with the given properties.
@@ -35,11 +35,11 @@ There are multiple ways to run _Blocky_ from your IDE. There is a text-based vie
 >   - `<moves>`: Required argument. Specifies the lowest number of moves that levels should require (i.e. "only generate levels that require this many moves or more"). Must be an integer greater than or equal to 1; lower values recommended (e.g. `3`).
 >   - **WARNING**: Using a value that is very low (1-3), or very high (10+) for `<size>` or a value that is very high (10+) for `<moves>` can hinder performance and may put the game in a state where it is impossible to generate levels, causing the game to lag, freeze, or crash. For this reason, please use values within the recommended ranges.
 >
-> Arguments to follow `solve`
+> **Arguments to follow `solve`**
 > - `-file <filename>`: Required argument. Specifies the file from which to read level data.
 >   - `<filename>`: Required argument. Specifies the name of the file from which to read level data. Must be the name of a file within the levelData directory, including the file extension (e.g. `introLevels.txt`).
 >
-> Arguments to follow `gen`
+> **Arguments to follow `gen`**
 > - `<size>`: Required argument. Specifies the width and height of the game board (i.e. how many blocks can fit horizontally and vertically). Must be an integer greater than or equal to 1; odd numbers 5-9 recommended (e.g. `5`).
 > - `<moves>`: Required argument. Specifies the lowest number of moves that levels should require (i.e. "only generate levels that require this many moves or more"). Must be an integer greater than or equal to 1; lower values recommended (e.g. `3`).
 > - `<quantity>`: Required argument. Specifies the number of levels to generate. Must be an integer greater than or equal to 1.

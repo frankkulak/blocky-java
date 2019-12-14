@@ -19,9 +19,8 @@ import blocky.view.TextBlockyView;
 import blocky.view.VisualBlockyView;
 
 /**
- * Blocky is a fun level-based puzzle game where the player must figure out how to navigate their
- * block through obstacles in order to get to the exit. Levels must be completed with the least
- * number of moves possible in order to advance.
+ * Blocky is a puzzle game in which the player must navigate a block through obstacles in order to
+ * reach the exit. Additionally, levels must be completed with the least number of moves possible.
  *
  * @author Frank Kulak
  * @version 1.0
@@ -29,41 +28,29 @@ import blocky.view.VisualBlockyView;
  */
 public class Blocky {
   /**
-   * <p>Main method to run the Blocky game using command line input.</p>
-   *
-   * <p>Examples of command line input:</p>
-   * <p> - "run -view VIEW_TYPE -file FILE_NAME"</p>
-   * <p> - "run -view VIEW_TYPE SIZE QUALITY -random SIZE MOVES"</p>
-   * <p> - "solve -file FILE_NAME"</p>
-   * <p> - "gen SIZE MOVES QUANTITY"</p>
-   *
-   * <p>VIEW_TYPE = one of: "text", "dark", "light"</p>
-   * <p>SIZE      = size of view in pixels (only required for visual view)</p>
-   * <p>QUALITY   = quality of view to display (only required for visual view)</p>
-   * <p>FILE_NAME = name of level input file between "levelData/" and "Levels.txt"
-   *               (EX: "intro" will be understood as "levelData/introLevels.txt")</p>
-   * <p>SIZE      = size of game boards to generate
-   *               (EX: "5" will result in 5x5 game board being generated)</p>
-   * <p>MOVES     = minimum number of moves required to solve random levels
-   *               (EX: "5" will result in levels that require 5+ moves to solve)</p>
-   * <p>QUANTITY  = number of levels to generate
-   *               (EX: "10" will randomly generate and print 10 levels)</p>
+   * Main method to run the Blocky game using command line input. See README.md for detailed
+   * information regarding run configurations.
    *
    * @param args list of command line arguments
    */
   public static void main(String[] args) {
-    switch(args[0]) {
-      case "run":
-        runGame(parseView(args), parseLevelSet(args));
-        break;
-      case "solve":
-        findSolutions(parseLevelSet(args));
-        break;
-      case "gen":
-        parseGenerationArgs(args);
-        break;
-      default:
-        throw new IllegalArgumentException("Unexpected token found: " + args[0]);
+    try {
+      String firstArg = args[0];
+      switch (firstArg) {
+        case "run":
+          runGame(parseView(args), parseLevelSet(args));
+          break;
+        case "solve":
+          findSolutions(parseLevelSet(args));
+          break;
+        case "gen":
+          parseGenerationArgs(args);
+          break;
+        default:
+          throw new IllegalArgumentException("Unexpected token found: " + firstArg);
+      }
+    } catch (IndexOutOfBoundsException e) {
+      throw new IllegalArgumentException("Must provide run configurations.");
     }
   }
 
@@ -72,13 +59,8 @@ public class Blocky {
   // -----------------------------------------------------------------------------------------------
 
   /**
-   * Parses command line input for view information. Input should contain the subarray {[i] =
-   * "-view", [i + 1] = VIEW_TYPE} where VIEW_TYPE is either "text", "dark", or "light" ("text"
-   * corresponds with a command-line-based text view, and "dark" and "light" correspond to a visual
-   * view with either a dark or light theme). If the view type is either "light" or "dark", there
-   * must be an additional two arguments at [i + 2] and [i + 3]: the size of the window to use for
-   * the view, and the quality to render the view at. The size must be given as an integer, and the
-   * quality must be one of {"low", "med", "high", "best"}.
+   * Parses command line input for view information. See README.md for detailed information
+   * regarding run configurations.
    *
    * @param args list of command line arguments
    * @return view parsed from command line input
@@ -88,23 +70,25 @@ public class Blocky {
     for (int i = 0; i < args.length; i++) {
       if (args[i].equals("-view")) {
         try {
-          GraphicsQuality gq;
+          String type = args[i + 1];
           boolean dark = false;
-          switch (args[i + 1]) {
-            case "text":
+          switch (type) {
+            case "text": // text view
               return new TextBlockyView(System.in, System.out);
             case "dark": // visual view with dark theme
               dark = true;
+              // intentionally no break here
             case "light": // visual view with light theme
-              gq = parseGraphicsQuality(args[i + 3]);
-              return new VisualBlockyView(dark, Integer.parseInt(args[i + 2]), gq);
+              int size = Integer.parseInt(args[i + 2]);
+              GraphicsQuality gq = GraphicsQuality.parseString(args[i + 3]);
+              return new VisualBlockyView(dark, size, gq);
             default:
-              throw new IllegalArgumentException("Invalid view type: " + args[i + 1]);
+              throw new IllegalArgumentException("Invalid view type: " + type);
           }
         } catch (IndexOutOfBoundsException e) {
           throw new IllegalArgumentException("Invalid number of tokens following \"-view\".");
         } catch (NumberFormatException e) {
-          throw new IllegalArgumentException("Found string where integer was expected.");
+          throw new IllegalArgumentException("Non-integer given for size of view.");
         }
       }
     }
@@ -113,31 +97,8 @@ public class Blocky {
   }
 
   /**
-   * Parses and returns GraphicsQuality from the given string.
-   *
-   * @param str string to parse GraphicsQuality from
-   * @return GraphicsQuality parsed from string
-   * @throws IllegalArgumentException if string could not be parsed as GraphicsQuality
-   */
-  private static GraphicsQuality parseGraphicsQuality(String str) throws IllegalArgumentException {
-    switch (str) {
-      case "low":
-        return GraphicsQuality.LOW;
-      case "med":
-        return GraphicsQuality.MED;
-      case "high":
-        return GraphicsQuality.HIGH;
-      case "best":
-        return GraphicsQuality.BEST;
-      default:
-        throw new IllegalArgumentException("Could not parse " + str + " as a graphics quality.");
-    }
-  }
-
-  /**
-   * Parses level set info given in command line input and returns corresponding level set. Input
-   * should contain one of the following subarrays: {[i] = "-file", [i + 1] = FILE_NAME} or {[i] =
-   * "-random", [i + 1] = SIZE, [i + 2] = MOVES}.
+   * Parses command line input for level set information. See README.md for detailed information
+   * regarding run configurations.
    *
    * @param args list of command line arguments
    * @return level set parsed from command line input
@@ -145,7 +106,8 @@ public class Blocky {
    */
   private static LevelSet parseLevelSet(String[] args) throws IllegalArgumentException {
     for (int i = 0; i < args.length; i++) {
-      if (args[i].equals("-file")) {
+      String token = args[i];
+      if (token.equals("-file")) {
         try {
           String fileName = "levelData/" + args[i + 1];
           try {
@@ -156,9 +118,9 @@ public class Blocky {
             throw new IllegalArgumentException("Error in " + fileName + ": " + e.getMessage());
           }
         } catch (IndexOutOfBoundsException e) {
-          throw new IllegalArgumentException("Expected text file name after \"-file\".");
+          throw new IllegalArgumentException("Expected filename after \"-file\".");
         }
-      } else if (args[i].equals("-random")) {
+      } else if (token.equals("-random")) {
         try {
           int size = Integer.parseInt(args[i + 1]);
           int moves = Integer.parseInt(args[i + 2]);
@@ -174,8 +136,8 @@ public class Blocky {
   }
 
   /**
-   * Parses command line input for generating random levels. Input array should have four elements:
-   * {[0] = "gen", [1] = SIZE, [2] = MOVES, [3] = QUANTITY}.
+   * Parses command line input for level generation information. See README.md for detailed
+   * information regarding run configurations.
    *
    * @param args list of command line arguments
    * @throws IllegalArgumentException if input is malformatted
@@ -192,7 +154,7 @@ public class Blocky {
   }
 
   // -----------------------------------------------------------------------------------------------
-  // PLAYING THE GAME
+  // PLAYING THE GAME (run)
   // -----------------------------------------------------------------------------------------------
 
   /**
@@ -204,19 +166,17 @@ public class Blocky {
   private static void runGame(BlockyView view, LevelSet levels) {
     BlockyModel model = new SimpleBlockyModel();
     BlockyController controller = new SimpleBlockyController(model, view, levels);
-
-    // starting the game
     controller.launch();
   }
 
   // -----------------------------------------------------------------------------------------------
-  // FINDING SOLUTIONS
+  // FINDING SOLUTIONS (solve)
   // -----------------------------------------------------------------------------------------------
 
   /**
-   * Finds and prints solutions to every level in the given level set.
+   * Finds and prints solutions to every level in the given LevelSet.
    *
-   * @param levels level set to find solutions for
+   * @param levels LevelSet to find solutions for
    */
   private static void findSolutions(LevelSet levels) {
     for (int i = 1; i <= levels.size(); i++) {
@@ -229,7 +189,7 @@ public class Blocky {
   }
 
   // -----------------------------------------------------------------------------------------------
-  // GENERATING RANDOM LEVELS
+  // GENERATING RANDOM LEVELS (gen)
   // -----------------------------------------------------------------------------------------------
 
   /**
