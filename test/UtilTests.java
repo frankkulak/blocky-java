@@ -1,7 +1,7 @@
 import org.junit.Test;
 
-import blocky.game.util.Direction;
-import blocky.game.util.Position;
+import blocky.util.Direction;
+import blocky.util.Position;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
