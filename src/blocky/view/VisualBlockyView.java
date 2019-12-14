@@ -18,6 +18,7 @@ import java.awt.event.KeyListener;
 
 import blocky.model.BlockyModel;
 import blocky.util.Direction;
+import blocky.util.GraphicsQuality;
 import controls.ButtonPanel;
 import controls.ButtonPanelListener;
 

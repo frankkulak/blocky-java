@@ -14,7 +14,7 @@ import blocky.util.levels.LevelGenerator;
 import blocky.util.levels.LevelSolver;
 import blocky.util.levels.RandomLevelSet;
 import blocky.view.BlockyView;
-import blocky.view.GraphicsQuality;
+import blocky.util.GraphicsQuality;
 import blocky.view.TextBlockyView;
 import blocky.view.VisualBlockyView;
 

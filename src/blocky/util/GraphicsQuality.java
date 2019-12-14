@@ -1,4 +1,4 @@
-package blocky.view;
+package blocky.util;
 
 /**
  * Represents the quality (smoothness of transitions) to use when rendering the game.
