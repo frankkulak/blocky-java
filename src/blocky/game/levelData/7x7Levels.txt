@@ -1,0 +1,20 @@
+# Blocky LevelSet File: 5x5 Levels
+# - Author:   Frank Kulak
+# - Created:  May 11 2019
+# - Modified: May 11 2019
+
+# Key:
+# X = Wall, - = Empty, W = WinningPiece, P = Player, S = Solid, O = Pop, C = Cracked,
+# R = Red, Y = Yellow, B = Blue, U = Purple, N = Orange, G = Green, g = Sticky
+
+# easy
+
+# todo
+
+# mid
+
+# todo
+
+# hard
+
+# todo

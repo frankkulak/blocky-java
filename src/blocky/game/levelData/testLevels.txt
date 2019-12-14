@@ -1,0 +1,23 @@
+-level # solution = RDLRULDR, 8
+-player 1 1
+XXXXXXX
+XP----X
+XO----X
+X------W
+XO----X
+X----SX
+XXXXXXX
+-/level
+
+-level # fixme player gets deleted?
+-player 2 2
+XXXXXXX
+X-CYB-X
+X-P-Y-X
+X----OW
+X-----X
+XY---OX
+XXXXXXX
+-/level
+
+# fixme some levels crash when player hits red and it tries to access player at piece before red

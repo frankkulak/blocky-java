@@ -1,0 +1,504 @@
+# Blocky LevelSet File: 5x5 Levels
+# - Author:   Frank Kulak
+# - Created:  May 03 2019
+# - Modified: May 16 2019
+
+# Key:
+# X = Wall, - = Empty, W = WinningPiece, P = Player, S = Solid, O = Pop, C = Cracked,
+# R = Red, Y = Yellow, B = Blue, U = Purple, N = Orange, G = Green, g = Sticky
+
+# -------------------------
+# EASY LEVELS
+# -------------------------
+
+-level # easy
+-player 1 1
+XXXXXXX
+XPS---X
+X-----X
+X-----W
+X--S--X
+X-----X
+XXXXXXX
+-/level
+
+-level # easy
+-player 3 3
+XXXXXXX
+XS---SX
+X-----X
+X--PS-W
+X----SX
+XS---SX
+XXXXXXX
+-/level
+
+-level # easy
+-player 1 5
+XXXXXXX
+X-S--PX
+X-----X
+X--O--W
+XS----X
+XS----X
+XXXXXXX
+-/level
+
+-level # easy
+-player 1 5
+XXXXXXX
+X--O-PX
+X-O---X
+X-----W
+X-----X
+X-----X
+XXXXXXX
+-/level
+
+-level # easy
+-player 2 1
+XXXXXXX
+X-----X
+XP-Y--X
+X-----W
+X-----X
+X-----X
+XXXXXXX
+-/level
+
+-level # easy
+-player 1 1
+XXXXXXX
+XP----X
+XO----X
+X-----W
+XO----X
+X----SX
+XXXXXXX
+-/level
+
+-level # easy
+-player 1 1
+XXXXXXX
+XP----X
+X--S--X
+X-----W
+X---S-X
+XRS---X
+XXXXXXX
+-/level
+
+-level # easy
+-player 1 1
+XXXXXXX
+XP----X
+X---S-X
+X-----W
+XO-O--X
+XR---CX
+XXXXXXX
+-/level
+
+-level # randomly generated, easy
+-player 4 1
+XXXXXXX
+X---CRX
+X-----X
+X-----W
+XP---OX
+X-----X
+XXXXXXX
+-/level
+
+-level # easy
+-player 2 2
+XXXXXXX
+X-----X
+XCP-O-X
+X-O---W
+X-O-O-X
+X-----X
+XXXXXXX
+-/level
+
+-level # randomly generated, easy
+-player 5 4
+XXXXXXX
+X-----X
+X-----X
+X-----W
+X-Y---X
+X---POX
+XXXXXXX
+-/level
+
+-level # easy
+-player 1 5
+XXXXXXX
+XBC--PX
+X-----X
+X-----W
+XO----X
+X----RX
+XXXXXXX
+-/level
+
+-level # easy
+-player 3 1
+XXXXXXX
+X--O--X
+X---OSX
+XP-S--W
+X----SX
+X-----X
+XXXXXXX
+-/level
+
+-level # randomly generated, easy
+-player 1 5
+XXXXXXX
+X--O-PX
+X-Y---X
+XB----W
+X-O---X
+X--B--X
+XXXXXXX
+-/level
+
+-level # randomly generated, easy
+-player 5 3
+XXXXXXX
+X--C--X
+XO-R-SX
+XO----W
+X-----X
+X--PR-X
+XXXXXXX
+-/level
+
+-level # easy
+-player 1 5
+XXXXXXX
+X----PX
+X-O-O-X
+X-----W
+X--O--X
+XO----X
+XXXXXXX
+-/level
+
+-level # randomly generated, easy
+-player 5 1
+XXXXXXX
+XRR-O-X
+X-----X
+X-----W
+XSR---X
+XP-O--X
+XXXXXXX
+-/level
+
+-level # randomly generated, easy
+-player 4 1
+XXXXXXX
+X--R--X
+X-----X
+X-----W
+XP--CCX
+X--O--X
+XXXXXXX
+-/level
+
+# -------------------------
+# MID LEVELS
+# -------------------------
+
+-level # mid
+-player 5 3
+XXXXXXX
+X--O--X
+X-C-C-X
+X-----W
+X-C-C-X
+X--P--X
+XXXXXXX
+-/level
+
+-level # mid
+-player 2 1
+XXXXXXX
+X-----X
+XP-YOBX
+X-----W
+X-----X
+X--O--X
+XXXXXXX
+-/level
+
+-level # randomly generated, mid
+-player 1 5
+XXXXXXX
+X----PX
+X--Y--X
+X-S--CW
+X-S---X
+X-----X
+XXXXXXX
+-/level
+
+-level # mid
+-player 1 3
+XXXXXXX
+X--P--X
+X-----X
+XY-Y--W
+X-----X
+X-----X
+XXXXXXX
+-/level
+
+-level # randomly generated, mid
+-player 2 2
+XXXXXXX
+X-----X
+X-P---X
+X-----W
+X---Y-X
+X----SX
+XXXXXXX
+-/level
+
+-level # mid
+-player 1 5
+XXXXXXX
+XSS-OPX
+XS----X
+X--O--W
+X-C---X
+X-S--OX
+XXXXXXX
+-/level
+
+-level # randomly generated, mid
+-player 5 1
+XXXXXXX
+X--C--X
+X-C--OX
+XY--S-W
+X-----X
+XPC--YX
+XXXXXXX
+-/level
+
+-level # randomly generated, mid
+-player 5 5
+XXXXXXX
+X-----X
+X-S-C-X
+X----YW
+X-----X
+X----PX
+XXXXXXX
+-/level
+
+-level # randomly generated, mid
+-player 2 1
+XXXXXXX
+XO---SX
+XP---BX
+X-B-C-W
+X--O--X
+X---ORX
+XXXXXXX
+-/level
+
+-level # randomly generated, mid
+-player 4 5
+XXXXXXX
+X--S--X
+X-CY--X
+X-S-S-W
+X----PX
+X--R-OX
+XXXXXXX
+-/level
+
+-level # randomly generated, mid
+-player 1 2
+XXXXXXX
+X-P--CX
+X----SX
+X---Y-W
+X-BO-SX
+X-----X
+XXXXXXX
+-/level
+
+-level # randomly generated, mid
+-player 1 5
+XXXXXXX
+X----PX
+XY--Y-X
+X----YW
+X-B-C-X
+X--B--X
+XXXXXXX
+-/level
+
+-level # randomly generated, mid
+-player 5 5
+XXXXXXX
+X----SX
+X-----X
+X--R--W
+X--Y--X
+XS---PX
+XXXXXXX
+-/level
+
+-level # randomly generated, mid
+-player 5 3
+XXXXXXX
+X-B---X
+XB----X
+XC----W
+X--Y--X
+X--P--X
+XXXXXXX
+-/level
+
+-level # randomly generated, mid
+-player 4 3
+XXXXXXX
+X--Y--X
+XB----X
+X-----W
+X-YP-BX
+X----BX
+XXXXXXX
+-/level
+
+-level # randomly generated, mid
+-player 4 4
+XXXXXXX
+X-----X
+X-R-O-X
+X--C--W
+X---PYX
+X---OBX
+XXXXXXX
+-/level
+
+-level # randomly generated, mid
+-player 5 5
+XXXXXXX
+X----RX
+X-----X
+X-----W
+XY-S-YX
+X----PX
+XXXXXXX
+-/level
+
+-level # randomly generated, mid
+-player 5 3
+XXXXXXX
+X-----X
+X---C-X
+X-----W
+X---Y-X
+XR-P-CX
+XXXXXXX
+-/level
+
+-level # randomly generated, mid
+-player 4 4
+XXXXXXX
+X-----X
+X-Y---X
+X---OCW
+X--RPRX
+X-O---X
+XXXXXXX
+-/level
+
+# -------------------------
+# HARD LEVELS
+# -------------------------
+
+-level # randomly generated, hard
+-player 2 2
+XXXXXXX
+X--Y--X
+X-P---X
+XY--C-W
+X-----X
+XR-O--X
+XXXXXXX
+-/level
+
+-level # randomly generated, hard
+-player 1 2
+XXXXXXX
+X-P-O-X
+X--O-YX
+X-----W
+X-O--SX
+X---Y-X
+XXXXXXX
+-/level
+
+-level # randomly generated, hard
+-player 1 4
+XXXXXXX
+XO--P-X
+X--Y--X
+X--B-YW
+XY--B-X
+X-S---X
+XXXXXXX
+-/level
+
+-level # hard
+-player 2 5
+XXXXXXX
+XS----X
+XS-Y-PX
+X---SYW
+X-----X
+X--O--X
+XXXXXXX
+-/level
+
+-level # hard
+-player 3 3
+XXXXXXX
+XO---RX
+X-Y--CX
+X--PS-W
+X----CX
+X-O--BX
+XXXXXXX
+-/level
+
+-level # randomly generated, hard
+-player 2 5
+XXXXXXX
+X-----X
+X-R--PX
+X---R-W
+X-Y---X
+X-COY-X
+XXXXXXX
+-/level
+
+-level # randomly generated, hard
+-player 4 5
+XXXXXXX
+XC-C--X
+X-YB--X
+X-OB--W
+X-Y--PX
+X--C--X
+XXXXXXX
+-/level

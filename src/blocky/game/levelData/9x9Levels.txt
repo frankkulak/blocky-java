@@ -1,0 +1,95 @@
+# Blocky LevelSet File: 9x9 Levels
+# - Author:   Frank Kulak
+# - Created:  May 21 2019
+# - Modified: May 21 2019
+
+# Key:
+# X = Wall, - = Empty, W = WinningPiece, P = Player, S = Solid, O = Pop, C = Cracked,
+# R = Red, Y = Yellow, B = Blue, U = Purple, N = Orange, G = Green, g = Sticky
+
+# -------------------------
+# EASY LEVELS
+# -------------------------
+
+-level # randomly generated, easy
+-player 3 3
+XXXXXXXXXXX
+X----S-O--X
+X-SYS-----X
+XB-PC-----X
+X-----S-C-X
+X---------W
+XY--BS--S-X
+X-------R-X
+X-O-------X
+X---------X
+XXXXXXXXXXX
+-/level
+
+# -------------------------
+# MID LEVELS
+# -------------------------
+
+-level # randomly generated
+-player 8 1
+XXXXXXXXXXX
+X-Y-YS-C--X
+X----SB---X
+X----Y----X
+X-B-------X
+XY--C-----W
+X----B----X
+XC-RC-----X
+XP--------X
+X----O----X
+XXXXXXXXXXX
+-/level
+
+# -------------------------
+# HARD LEVELS
+# -------------------------
+
+-level # randomly generated, hard
+-player 1 6
+XXXXXXXXXXX
+X----YPC--X
+X------SS-X
+X-O---C--SX
+X--O---R-OX
+XY-R---BS-W
+XBS--CB-R-X
+X-------O-X
+X-----R-YBX
+XO-B-Y----X
+XXXXXXXXXXX
+-/level
+
+-level # randomly generated, hard
+-player 7 5
+XXXXXXXXXXX
+X--Y----C-X
+X------B--X
+X--BR----YX
+X-S--R----X
+X---O-----W
+X----CS-R-X
+X-B-SP---OX
+X-------Y-X
+X---Y-----X
+XXXXXXXXXXX
+-/level
+
+-level # todo make into logo
+-player 5 6
+XXXXXXXXXXX
+X---------X
+X--SSS----X
+X--S--S---X
+X--S--S---X
+X--SSSP---W
+X--S---S--X
+X--S---S--X
+X--SSSS---X
+X---------X
+XXXXXXXXXXX
+-/level

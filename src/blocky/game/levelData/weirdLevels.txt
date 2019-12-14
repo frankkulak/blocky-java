@@ -1,0 +1,48 @@
+# Blocky LevelSet File: Intro Levels
+# - Author:   Frank Kulak
+# - Created:  May 11 2019
+# - Modified: May 11 2019
+
+# Key:
+# X = Wall, - = Empty, W = WinningPiece, P = Player, S = Solid, O = Pop, C = Cracked,
+# R = Red, Y = Yellow, B = Blue, U = Purple, N = Orange, G = Green, g = Sticky
+
+# just solid blocks (1-5)
+
+-level # randomly generated, mid
+-player 5 5
+XXXXXXX
+X----RX
+X-----X
+X-----W
+XY-S-YX
+X----PX
+XXXXXXX
+-/level
+
+-level # randomly generated, hard
+-player 7 5
+XXXXXXXXXXX
+X--Y----C-X
+X------B--X
+X--BR----YX
+X-S--R----X
+X---O-----W
+X----CS-R-X
+X-B-SP---OX
+X-------Y-X
+X---Y-----X
+XXXXXXXXXXX
+-/level
+
+-level
+-player 4 1
+-----XXXXXXX
+-----XSO---X
+-----X-----X
+XXXXXX-----X
+XP------O--X
+XO---------W
+XO---------X
+XXXXXXXXWXXX
+-/level

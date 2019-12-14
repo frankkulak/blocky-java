@@ -1,0 +1,362 @@
+# Blocky LevelSet File: Intro Levels
+# - Author:   Frank Kulak
+# - Created:  Apr 12 2019
+# - Modified: May 11 2019
+
+# Key:
+# X = Wall, - = Empty, W = WinningPiece, P = Player, S = Solid, O = Pop, C = Cracked,
+# R = Red, Y = Yellow, B = Blue, U = Purple, N = Orange, G = Green, g = Sticky
+
+# just solid blocks (1-5)
+
+-level # 1
+-player 3 1
+XXXXXXX
+X-----X
+X-----X
+XP----W
+X-----X
+X-----X
+XXXXXXX
+-/level
+
+-level # 2
+-player 1 2
+XXXXXXX
+X-P---X
+X-----X
+X-----W
+X-S---X
+X-----X
+XXXXXXX
+-/level
+
+-level # 3
+-player 1 5
+XXXXXXX
+X-S--PX
+X-----X
+X-----W
+X--S--X
+X-----X
+XXXXXXX
+-/level
+
+-level # 4
+-player 1 5
+XXXXXXX
+X----PX
+X----SX
+X-----W
+X-----X
+X-----X
+XXXXXXX
+-/level
+
+-level # 5
+-player 5 5
+XXXXXXX
+XSS---X
+X----SX
+X-----W
+X--S-SX
+XS---PX
+XXXXXXX
+-/level
+
+# introducing pop blocks (6-10)
+
+-level # 6
+-player 1 1
+XXXXXXX
+XP----X
+XO----X
+X-----W
+X-----X
+X-----X
+XXXXXXX
+-/level
+
+-level # 7
+-player 1 5
+XXXXXXX
+X--O-PX
+X-----X
+X-----W
+X-S---X
+X-----X
+XXXXXXX
+-/level
+
+-level # 8
+-player 5 1
+XXXXXXX
+X-S---X
+X--O--X
+XS----W
+X-----X
+XP----X
+XXXXXXX
+-/level
+
+-level # 9
+-player 5 1
+XXXXXXX
+X-S--SX
+X---S-X
+XO----W
+X--S--X
+XP--S-X
+XXXXXXX
+-/level
+
+-level # 10
+-player 1 5
+XXXXXXX
+X----PX
+X---S-X
+XO----W
+X-SSS-X
+X-----X
+XXXXXXX
+-/level
+
+# introducing cracked blocks (11-15)
+
+-level # 11
+-player 1 2
+XXXXXXX
+X-P---X
+X-----X
+X-----W
+X-C---X
+X-----X
+XXXXXXX
+-/level
+
+-level # 12
+-player 1 5
+XXXXXXX
+X----PX
+X-----X
+X----CW
+XS----X
+X-----X
+XXXXXXX
+-/level
+
+-level # 13
+-player 5 5
+XXXXXXX
+X---CCX
+X-----X
+X---O-W
+X--C-CX
+X----PX
+XXXXXXX
+-/level
+
+-level # 14
+-player 1 5
+XXXXXXX
+X-C--PX
+X-----X
+XO-O--W
+X--O--X
+X-S--SX
+XXXXXXX
+-/level
+
+-level # 15
+-player 1 1
+XXXXXXX
+XP--CSX
+X-----X
+X---O-W
+X----CX
+X-----X
+XXXXXXX
+-/level
+
+# introducing red blocks (16-20)
+
+-level # 16
+-player 1 5
+XXXXXXX
+XR---PX
+XS----X
+X-----W
+X-S---X
+X-----X
+XXXXXXX
+-/level
+
+-level # 17
+-player 1 5
+XXXXXXX
+X----PX
+X--S--X
+XS----W
+X---SRX
+X--S--X
+XXXXXXX
+-/level
+
+-level # 18
+-player 1 1
+XXXXXXX
+XP--CSX
+XS----X
+X-----W
+X--R--X
+X-----X
+XXXXXXX
+-/level
+
+-level # 19
+-player 5 1
+XXXXXXX
+X-S--SX
+X---S-X
+XO----W
+X--S--X
+XP---RX
+XXXXXXX
+-/level
+
+-level # 20
+-player 1 5
+XXXXXXX
+X--C-PX
+X-O---X
+X-----W
+X--SR-X
+X-----X
+XXXXXXX
+-/level
+
+# introducing blue blocks (21-25)
+
+-level # 21
+-player 1 5
+XXXXXXX
+XB--OPX
+X-----X
+X-----W
+X--S--X
+X-----X
+XXXXXXX
+-/level
+
+-level # 22
+-player 2 1
+XXXXXXX
+X----SX
+XPO-B-X
+X-----W
+X--S--X
+X-----X
+XXXXXXX
+-/level
+
+-level # 23
+-player 5 5
+XXXXXXX
+XB---SX
+X-B---X
+X-----W
+X---S-X
+XO---PX
+XXXXXXX
+-/level
+
+-level # 24
+-player 1 1
+XXXXXXX
+XPO--BX
+X-----X
+X-----W
+X--O--X
+XC----X
+XXXXXXX
+-/level
+
+-level # 25
+-player 5 1
+XXXXXXX
+XO---BX
+X-----X
+X-----W
+X----OX
+XP---BX
+XXXXXXX
+-/level
+
+# introducing yellow blocks (26-30)
+
+-level # 26
+-player 1 1
+XXXXXXX
+XP----X
+X-----X
+XY----W
+X-----X
+XS----X
+XXXXXXX
+-/level
+
+-level # 27
+-player 2 1
+XXXXXXX
+X---R-X
+XP-Y-CX
+X-----W
+X-----X
+X----SX
+XXXXXXX
+-/level
+
+-level # 28
+-player 4 1
+XXXXXXX
+X----SX
+X-----X
+X-----W
+XP-Y-SX
+X-----X
+XXXXXXX
+-/level
+
+-level # 29
+-player 1 1
+XXXXXXX
+XP---SX
+X--Y-SX
+XS----W
+X----SX
+XR--SSX
+XXXXXXX
+-/level
+
+-level # 30
+-player 1 5
+XXXXXXX
+X--Y-PX
+X--Y--X
+X-----W
+X-----X
+X-----X
+XXXXXXX
+-/level
+
+# introducing orange blocks (31-35)
+
+# TODO ORANGE
+
+# introducing green blocks (36-40)
+
+# TODO GREEN
+
+# introducing purple blocks (41-45)
+
+# TODO PURPLE

@@ -1,0 +1,199 @@
+# Blocky LevelSet File: Randomly Generated Levels
+# - Author:   Frank Kulak
+# - Created:  May 11 2019
+# - Modified: May 16 2019
+
+# Key:
+# X = Wall, - = Empty, W = WinningPiece, P = Player, S = Solid, O = Pop, C = Cracked,
+# R = Red, Y = Yellow, B = Blue, U = Purple, N = Orange, G = Green, g = Sticky
+
+# todo checked
+
+-level # randomly generated
+-player 4 4
+XXXXXXX
+X-----X
+XOB---X
+X--B--W
+X--YP-X
+XO---SX
+XXXXXXX
+-/level
+
+# todo unchecked
+
+-level # randomly generated
+-player 5 1
+XXXXXXX
+XO----X
+X---B-X
+XC-Y--W
+XCR---X
+XP--O-X
+XXXXXXX
+-/level
+
+-level # randomly generated
+-player 2 1
+XXXXXXX
+X--C-CX
+XP--YOX
+X-B-B-W
+X-R---X
+X---S-X
+XXXXXXX
+-/level
+
+-level # randomly generated
+-player 5 5
+XXXXXXX
+X--OS-X
+X-C-C-X
+X--C--W
+X-R--YX
+X-O--PX
+XXXXXXX
+-/level
+
+-level # randomly generated
+-player 5 2
+XXXXXXX
+X-----X
+X-----X
+X-----W
+XOS---X
+XSP--CX
+XXXXXXX
+-/level
+
+-level # randomly generated
+-player 5 4
+XXXXXXX
+X-----X
+X----OX
+X----CW
+X-----X
+X--OP-X
+XXXXXXX
+-/level
+
+-level # randomly generated
+-player 2 3
+XXXXXXX
+X-O-S-X
+X-YP--X
+X--O-YW
+X-----X
+X-SR--X
+XXXXXXX
+-/level
+
+-level # randomly generated
+-player 2 4
+XXXXXXX
+X---C-X
+XYR-P-X
+X-----W
+XC-R-OX
+XB-S--X
+XXXXXXX
+-/level
+
+-level # randomly generated
+-player 4 3
+XXXXXXX
+XY-YRRX
+XY---OX
+X-----W
+XR-P--X
+X---B-X
+XXXXXXX
+-/level
+
+-level # randomly generated
+-player 1 3
+XXXXXXX
+X-OP--X
+X--Y--X
+XS----W
+X-BO--X
+X--B-CX
+XXXXXXX
+-/level
+
+-level # randomly generated
+-player 5 4
+XXXXXXX
+XO----X
+X-----X
+X-B--YW
+XO--B-X
+X--OPCX
+XXXXXXX
+-/level
+
+-level # randomly generated
+-player 5 4
+XXXXXXX
+X-----X
+X-P-Y-X
+XB-Y--W
+XB----X
+X---R-X
+XXXXXXX
+-/level
+
+-level # randomly generated
+-player 1 5
+XXXXXXX
+X-Y--PX
+XRC---X
+X--Y-CW
+X-----X
+XRBO--X
+XXXXXXX
+-/level
+
+-level # randomly generated
+-player 1 3
+XXXXXXX
+XOCP--X
+X---Y-X
+XCY---W
+X---Y-X
+XC---RX
+XXXXXXX
+-/level
+
+-level # randomly generated
+-player 5 4
+XXXXXXX
+X--S--X
+XSO---X
+X-----W
+XS----X
+X-Y-POX
+XXXXXXX
+-/level
+
+-level # randomly generated
+-player 2 5
+XXXXXXX
+XO----X
+X--O--X
+X-O---W
+X-----X
+X-O---X
+XXXXXXX
+-/level
+
+-level # randomly generated
+-player 4 4
+XXXXXXX
+X----RX
+X-O---X
+XOOO--W
+X--O-CX
+X-RO--X
+XXXXXXX
+-/level
