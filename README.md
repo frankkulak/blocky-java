@@ -4,7 +4,7 @@
 
 _Blocky_ is an original puzzle game in which the player must navigate a block through various obstacles in order to reach the exit. Additionally, levels must be completed with the least number of moves possible.
 
-This project is a re-creation of a mobile application that I created as the final project for my first programming class in high school. I have improved the design of the code utilizing the MVC design pattern, after taking more programming classes in college, but please keep in mind that this code has not been touched (other than some comments and creation of a GitHub repo) since May of 2019, and my programming style has changed dramatically since then. Please also see my re-creation of [_Block Dude_](https://github.com/frankkulak/blockdude-java) for a more recent example of my coding practices.
+This project is a re-creation of the _Blocky_ mobile application that I created as my final project in a high school programming class. I have since improved the design of the code utilizing the MVC design pattern, after taking more programming classes in college, but please keep in mind that this code has not been touched (other than some comments, styling, refactoring, and creation of a repo) since May of 2019, and my programming style has changed dramatically since then. Please also see my re-creation of [_Block Dude_](https://github.com/frankkulak/blockdude-java) for a more recent example of my coding practices.
 
 ## Playing the game
 
