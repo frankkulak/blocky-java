@@ -80,21 +80,31 @@ More advanced controls & cheat codes can be found in TextBlockyView.java or Visu
 ## Bugs and known issues
 
 **Game sometimes lags, freezes when generating levels** (Noticed: Dec 14 2019; Priority: Minor)
-- _Description_: The game may lag or freeze when generating levels, due to the inefficient way that levels are currently being generated. This is generally not an issue when normal values are given for the size and moves required for levels.
-- _Temporary solution_: Do not use extreme size or moves values for generating levels.
-- _Ideas for fix_: Rewrite the way that levels are generated to be more efficient; prevent extreme values from being accepted by the program.
+<details>
+  <summary>Expand for details</summary>
+  
+  - _Description_: The game may lag or freeze when generating levels, due to the inefficient way that levels are currently being generated. This is generally not an issue when normal values are given for the size and moves required for levels.
+  - _Temporary solution_: Do not use extreme size or moves values for generating levels.
+  - _Ideas for fix_: Rewrite the way that levels are generated to be more efficient; prevent extreme values from being accepted by the program.
+</details>
 
 **Game crashes due to infinite recursion** (Noticed: Apr 18 2019; Priority: Minor)
-- _Description_: If a block is between two blue blocks and hits one of them, it will bounce into the
-   other blue block, then back, and so on infinitely until `StackOverflowException` is thrown.
-- _Temporary solution_: Do not create any levels with blue blocks back-to-back, and prevent level generator from creating any such levels.
-- _Ideas for fix_: Have model keep track of whether or not BlueBlock has been hit already on this move, but this would be brittle for the future (idea for blue corner pieces, etc.).
+<details>
+  <summary>Expand for details</summary>
+  
+  - _Description_: If a block is between two blue blocks and hits one of them, it will bounce into the other blue block, then back, and so on infinitely until `StackOverflowException` is thrown.
+  - _Temporary solution_: Do not create any levels with blue blocks back-to-back, and prevent level generator from creating any such levels.
+  - _Ideas for fix_: Have model keep track of whether or not BlueBlock has been hit already on this move, but this would be brittle for the future (idea for blue corner pieces, etc.).
+</details>
 
 **Runtime issue, game freezes** (Noticed: May 21 2019; Priority: None)
-- _Description_: If either the 'n' or 'e' key is held, user input from the keyboard will no longer be
-   accepted until the game is restarted. After looking into this issue online, it seems to be a known issue with macOS Sierra.
-- _Temporary solution_: Avoid holding 'n' or 'e'; relaunch game after freeze occurs; don't use macOS Sierra.
-- _Ideas for fix_: Allow mouse input from user; research ways around bug.
+<details>
+  <summary>Expand for details</summary>
+  
+  - _Description_: If either the 'n' or 'e' key is held, user input from the keyboard will no longer be accepted until the game is restarted. After looking into this issue online, it seems to be a known issue with macOS Sierra.
+  - _Temporary solution_: Avoid holding 'n' or 'e'; relaunch game after freeze occurs; don't use macOS Sierra.
+  - _Ideas for fix_: Allow mouse input from user; research ways around bug.
+</details>
 
 ## Future plans
 
@@ -103,6 +113,7 @@ Refactor codebase:
 - Convert the `commands` package to an enum
 - De-couple the model and visual view (remove use of 'sprites')
 - Remake the level-generation algorithm as something more efficient
+- Improve way blue blocks are handled
 
 Add new types of blocks:
 - Orange (hit once, becomes red)
